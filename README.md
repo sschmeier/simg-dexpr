@@ -21,5 +21,4 @@ singularity exec simg-dexpr.simg Rscript test.R > session.txt
 
 # to bind directory not in $HOME
 singularity exec --bind /mnt/disk1/seb simg-dexpr.simg Rscript test.R > session.txt
-
 ```
