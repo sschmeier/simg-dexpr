@@ -1,0 +1,5 @@
+library(DESeq2)
+library(edgeR)
+library(readr)
+library(tximport)
+sessionInfo()
