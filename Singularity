@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: continuumio/miniconda3:4.5.4
+From: continuumio/miniconda3:4.5.11
 
 %labels
    AUTHOR schmeier@tuta.io
@@ -19,18 +19,17 @@ From: continuumio/miniconda3:4.5.4
    conda config --add channels conda-forge
    conda config --add channels bioconda
    echo "We install tools."
-   conda install --yes snakemake=5.3.0
-   conda install --yes pandas=0.23.4
-   conda install --yes bioconductor-edger=3.20.7
-   conda install --yes bioconductor-deseq2=1.18.1
+   conda install --yes snakemake=5.4.0
+   conda install --yes bioconductor-edger=3.22.5
+   conda install --yes bioconductor-deseq2=1.20.0
    conda install --yes r-readr=1.1.1
-   conda install --yes bioconductor-tximport=1.6.0
+   conda install --yes bioconductor-tximport=1.8.0
    conda install --yes r-samr=2.0
-   conda install --yes bioconductor-limma=3.34.9
-   conda install --yes bioconductor-ihw=1.6.0
-   conda install --yes bioconductor-biocparallel=1.12.0
-   conda install --yes bioconductor-clusterprofiler=3.6.0
-   conda install --yes bioconductor-org.hs.eg.db=3.5.0
-   conda install --yes bioconductor-org.mm.eg.db=3.5.0
-   conda install --yes bioconductor-gseabase=1.40.0
+   conda install --yes bioconductor-limma=3.36.5
+   conda install --yes bioconductor-ihw=1.8.0
+   conda install --yes bioconductor-biocparallel=1.14.2
+   conda install --yes bioconductor-clusterprofiler=3.8.1
+   conda install --yes bioconductor-org.hs.eg.db=3.6.0
+   conda install --yes bioconductor-org.mm.eg.db=3.6.0
+   conda install --yes bioconductor-gseabase=1.42.0
    conda clean --index-cache --tarballs --packages --yes
